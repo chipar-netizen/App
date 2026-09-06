@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="referrer" content="no-referrer" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Review thank-you drafter — Allura Dental</title>
+<style>
+:root{
+  --bg:#F3EDE3; --card:#FDFCFA; --panel:#FBF9F4; --line:#E7E3DB;
+  --gold:#B8965A; --gold-ink:#FDFCFA; --sage:#6A7F62;
+  --ink:#1C1C1C; --ink-2:#4A4A48; --ink-3:#6B6B63;
+  --warn:#9E4F35; --ok:#4F6B48;
+  --focus:#6A7F62;
+  --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  --serif:Georgia,'Times New Roman',serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#171614; --card:#211F1C; --panel:#1B1A17; --line:#35322D;
+    --gold:#C7A469; --gold-ink:#191714; --sage:#93A98A;
+    --ink:#F2EFE9; --ink-2:#C4C0B7; --ink-3:#9A958B;
+    --warn:#D9927A; --ok:#9BBA92;
+    --focus:#93A98A;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:var(--sans); font-size:16px; line-height:1.5;
+  padding:0 0 env(safe-area-inset-bottom);
+}
+.wrap{max-width:760px; margin:0 auto; padding:20px 16px 32px}
+header{margin:0 0 18px}
+.eyebrow{
+  margin:0 0 6px; font-size:11px; font-weight:700; letter-spacing:.2em;
+  text-transform:uppercase; color:var(--sage);
+}
+h1{margin:0 0 6px; font-family:var(--serif); font-weight:400; font-size:26px; line-height:1.2}
+.lede{margin:0; color:var(--ink-2); font-size:15px}
+
+.card{
+  background:var(--card); border:1px solid var(--line); border-radius:4px;
+  padding:18px 16px; margin:0 0 16px;
+}
+.field{margin:0 0 18px}
+.field:last-child{margin-bottom:0}
+label{display:block; font-size:13px; font-weight:700; letter-spacing:.04em;
+  text-transform:uppercase; color:var(--ink-2); margin:0 0 6px}
+.hint{margin:6px 0 0; font-size:13px; line-height:1.45; color:var(--ink-3)}
+input[type=text], select, textarea{
+  width:100%; font-family:var(--sans); font-size:16px; line-height:1.45;
+  color:var(--ink); background:var(--panel);
+  border:1px solid var(--line); border-radius:4px; padding:13px 12px;
+  -webkit-appearance:none; appearance:none;
+}
+select{
+  background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),
+                   linear-gradient(135deg,currentColor 50%,transparent 50%);
+  background-position:calc(100% - 18px) 50%, calc(100% - 12px) 50%;
+  background-size:6px 6px, 6px 6px; background-repeat:no-repeat;
+  padding-right:38px;
+}
+textarea{min-height:150px; resize:vertical}
+input:focus, select:focus, textarea:focus, button:focus-visible, summary:focus-visible{
+  outline:2px solid var(--focus); outline-offset:2px;
+}
+.invalid{border-color:var(--warn)}
+#otherWrap{margin-top:8px}
+[hidden]{display:none !important}
+
+.actions{
+  position:sticky; bottom:0; z-index:5;
+  background:var(--bg); border-top:1px solid var(--line);
+  padding:12px 0 max(12px, env(safe-area-inset-bottom));
+  margin:0 0 16px;
+}
+.btn{
+  display:block; width:100%; font-family:var(--sans); font-size:15px;
+  border-radius:4px; border:1px solid var(--line); cursor:pointer;
+  padding:16px 14px; background:var(--panel); color:var(--ink);
+}
+.btn-primary{
+  background:var(--gold); border-color:var(--gold); color:var(--gold-ink);
+  font-weight:700; letter-spacing:.06em; text-transform:uppercase; font-size:14px;
+  padding:18px 14px;
+}
+.btn-row{display:flex; gap:10px; margin-top:10px}
+.btn-row .btn{padding:13px 10px; font-size:14px}
+.btn:active{opacity:.85}
+
+#status{
+  margin:10px 0 0; font-size:14px; line-height:1.45; min-height:1.45em;
+  color:var(--ink-2);
+}
+#status.err{color:var(--warn); font-weight:600}
+#status.ok{color:var(--ok); font-weight:600}
+
+details.preview{
+  background:var(--card); border:1px solid var(--line); border-radius:4px;
+  margin:0 0 16px;
+}
+details.preview>summary{
+  list-style:none; cursor:pointer; padding:15px 16px;
+  font-size:13px; font-weight:700; letter-spacing:.04em; text-transform:uppercase;
+  color:var(--ink-2); display:flex; justify-content:space-between; align-items:center;
+}
+details.preview>summary::-webkit-details-marker{display:none}
+details.preview>summary::after{content:'Show'; font-weight:400; letter-spacing:0; text-transform:none; color:var(--ink-3)}
+details.preview[open]>summary::after{content:'Hide'}
+.frame-pad{padding:0 12px 12px}
+iframe{
+  display:block; width:100%; height:560px; border:1px solid var(--line);
+  border-radius:4px; background:#F3EDE3;
+}
+
+footer{margin:22px 0 0; padding:0 2px}
+footer p{margin:0 0 6px; font-size:12.5px; line-height:1.5; color:var(--ink-3)}
+footer strong{color:var(--ink-2)}
+
+@media (min-width:700px){
+  .wrap{padding:32px 24px 40px}
+  h1{font-size:32px}
+  .card{padding:24px}
+  .actions{position:static; border-top:0; padding:0; margin-bottom:16px}
+  .btn-row{margin-top:12px}
+  iframe{height:680px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <p class="eyebrow">Allura Dental</p>
+    <h1>Review thank-you drafter</h1>
+    <p class="lede">Fills the three blanks in template 17, then copies the finished email ready to paste into Outlook, Gmail or Apple Mail.</p>
+  </header>
+
+  <div class="card">
+    <div class="field">
+      <label for="firstName">Patient first name</label>
+      <input type="text" id="firstName" autocomplete="off" autocapitalize="words"
+             autocorrect="off" spellcheck="false" enterkeyhint="next" placeholder="Priya" />
+      <p class="hint">Exactly as they wrote it on the form.</p>
+    </div>
+
+    <div class="field">
+      <label for="practitioner">Practitioner</label>
+      <select id="practitioner">
+        <option value="Dr Sumaiya">Dr Sumaiya</option>
+        <option value="__other__">Other&hellip;</option>
+      </select>
+      <div id="otherWrap" hidden>
+        <input type="text" id="practitionerOther" autocomplete="off" autocapitalize="words"
+               autocorrect="off" spellcheck="false" placeholder="Name as it should read in the email" />
+      </div>
+      <p class="hint">Reads as &ldquo;<span id="practEcho">Dr Sumaiya</span> and the team have seen it.&rdquo;</p>
+    </div>
+
+    <div class="field">
+      <label for="stars">Rating they gave</label>
+      <select id="stars">
+        <option value="">Don&rsquo;t show a rating</option>
+        <option value="5">&#9733;&#9733;&#9733;&#9733;&#9733; &nbsp;Five</option>
+        <option value="4">&#9733;&#9733;&#9733;&#9733; &nbsp;Four</option>
+        <option value="3">&#9733;&#9733;&#9733; &nbsp;Three</option>
+        <option value="2">&#9733;&#9733; &nbsp;Two</option>
+        <option value="1">&#9733; &nbsp;One</option>
+      </select>
+      <p class="hint"><strong>Only if they actually gave one.</strong> The feedback form does not ask for a rating, so leave this blank unless the patient put a score in their own words. Blank removes the stars from the email entirely.</p>
+    </div>
+
+    <div class="field">
+      <label for="comment">Their review comment</label>
+      <textarea id="comment" autocomplete="off" autocorrect="off" spellcheck="false"
+                placeholder="Paste what they wrote, exactly as they wrote it."></textarea>
+      <p class="hint">Verbatim. Do not tidy the grammar, trim it to the flattering half, or drop an emoji they used &mdash; they have to recognise it as their own.</p>
+      <p class="hint" id="modeNote"></p>
+    </div>
+  </div>
+
+  <div class="actions">
+    <button type="button" class="btn btn-primary" id="copyRich">Copy email</button>
+    <div class="btn-row">
+      <button type="button" class="btn" id="copyPlain">Copy as plain text</button>
+      <button type="button" class="btn" id="download">Download .html</button>
+    </div>
+    <p id="status" role="status" aria-live="polite"></p>
+  </div>
+
+  <details class="preview" id="previewBox">
+    <summary>Preview</summary>
+    <div class="frame-pad">
+      <iframe id="preview" title="Email preview" sandbox=""></iframe>
+    </div>
+  </details>
+
+  <footer>
+    <p><strong>Nothing you type here leaves this device.</strong> No analytics, no error reporting, no server &mdash; the app works with the network switched off, and nothing is saved except which practitioner you last picked.</p>
+    <p>The preview loads the Allura logo and webfont from alluradental.com.au, because the email itself does. Those requests carry no patient information.</p>
+    <p id="src">Template 17 &middot; rebuilt from <code>shared/brand/communication-templates/17-review-thank-you/allura/allura-email.html</code> &mdash; edit that, then run <code>app/build-app.py</code>.</p>
+  </footer>
+
+</div>
+
+<div id="clipStage" aria-hidden="true" style="position:fixed;left:-9999px;top:0;width:1px;height:1px;overflow:hidden;opacity:0;"></div>
+
+<script>
+(function(){
+'use strict';
+
+var EMAIL_TEMPLATE = "\u003c!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n\u003chtml xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" lang=\"en-AU\">\n\u003chead>\n\u003cmeta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n\u003cmeta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n\u003cmeta name=\"x-apple-disable-message-reformatting\" />\n\u003cmeta name=\"format-detection\" content=\"telephone=no, date=no, address=no, email=no\" />\n\u003cmeta name=\"color-scheme\" content=\"light\" />\n\u003cmeta name=\"supported-color-schemes\" content=\"light\" />\n\u003ctitle>Thank you \u2014 Allura Dental\u003c/title>\n\u003c!--\n  ALLURA DENTAL \u00b7 17 REVIEW THANK-YOU  \u2192  GOOGLE\n\n  Sent by hand after a patient fills in the internal review form. Their own\n  words are pasted into the quote block, which is the whole point: this is a\n  reply to something they wrote, not a campaign email.\n\n  PLACEHOLDERS \u2014 [SQUARE BRACKETS], typed in before sending:\n    [FIRST NAME]                 \u00b7 once, the headline\n    [THEIR OWN WORDS]            \u00b7 once, the quote block\n    [PRACTITIONER FIRST NAME]    \u00b7 once, under the quote\n  TWO MODES. The drafter resolves the IF:WORDS / IF:NOWORDS marker comments\n  in the body below and keeps one set:\n    WORDS    \u00b7 they wrote a comment. The quote block carries it, and the\n               three steps start with \"copy your words above\".\n    NOWORDS  \u00b7 they left a rating and no comment. The quote block holds the\n               stars alone, the opening line and the ask are reworded, and\n               the steps collapse to two \u2014 there is nothing to paste.\n  Every passage that assumes a written comment has both variants. If you add\n  another one, give it both, or the rating-only send says something false.\n\n  PLACEHOLDERS, continued:\n    [STARS]                      \u00b7 once, top of the quote block. OPTIONAL \u2014\n                                   the drafter deletes the whole STARS block\n                                   when no rating is set. Only ever show a\n                                   rating the patient actually gave. The\n                                   feedback form (template 10) does not ask\n                                   for one, by design.\n\n  Paste their comment VERBATIM. Do not tidy the grammar, trim it to the\n  flattering half, or add the emoji back if they used one and it does not\n  survive the paste. A quote they do not recognise reads as a form letter\n  and kills the whole effect.\n\n  SIZING \u2014 the inline styles are the DESKTOP values and the \u003cstyle> block in\n  the head shrinks them for phones (max-width:599px). Do not invert it. A\n  clipboard paste into Outlook or Gmail keeps inline styles and throws the\n  head away; built mobile-first, every pasted send goes out at phone size.\n\n  Google review link: https://g.page/r/CcjSxabvOoJYEBM/review\n  Verified \u2014 resolves to Place ID ChIJexIF1CCJ1moRyNLFpu86glg, feature id\n  0x6ad68920d405127b:0x58823aefa6c5d2c8, an exact match for the Truganina\n  listing. Do not swap it for a shortened or re-generated link without\n  re-checking; a wrong CID sends reviews to another business.\n\n  ** READ NOTES.md BEFORE SWITCHING THIS ON. ** Sending it only to happy\n  patients is review gating, which Google prohibits. There is a way to run\n  this that is not gating, and it is written up there.\n\n  No urgency, no chasing, no second ask. One invitation, gratefully made.\n-->\n\n\u003c!--[if !mso]>\u003c!-->\n\u003clink href=\"https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,400i;7..72,600&family=Manrope:wght@400;600;700&display=swap\" rel=\"stylesheet\" type=\"text/css\" />\n\u003c!--\u003c![endif]-->\n\n\u003cstyle type=\"text/css\">\n  body { margin:0 !important; padding:0 !important; width:100% !important; background-color:#F3EDE3; }\n  table { border-collapse:collapse !important; mso-table-lspace:0pt; mso-table-rspace:0pt; }\n  img { -ms-interpolation-mode:bicubic; border:0; outline:none; text-decoration:none; }\n  a { text-decoration:none; }\n  .ExternalClass { width:100%; }\n  .ExternalClass, .ExternalClass p, .ExternalClass td, .ExternalClass div { line-height:100%; }\n  a[x-apple-data-detectors] { color:inherit !important; text-decoration:none !important; font-size:inherit !important; font-family:inherit !important; font-weight:inherit !important; line-height:inherit !important; }\n\n  /* ---- PHONE SHRINK ----------------------------------------------------\n     The INLINE styles are the full-size desktop values, and this block steps\n     them down on small screens. That way round on purpose: a clipboard paste\n     into Outlook or Gmail keeps the inline styles and drops this \u003cstyle>\n     block, so the email must already be full size without it. Built the\n     other way (mobile inline, desktop in a media query) every pasted send\n     goes out at phone size. -------------------------------------------- */\n  @media screen and (max-width:599px) {\n    .px       { padding-left:24px !important; padding-right:24px !important; }\n    .h1       { font-size:28px !important; line-height:36px !important; }\n    .pt-hero  { padding-top:16px !important; }\n    .logo     { width:226px !important; }\n    .btn-wrap { width:100% !important; }\n    .btn-a    { display:block !important; font-size:14px !important; letter-spacing:0.06em !important; padding-left:18px !important; padding-right:18px !important; }\n  }\n\u003c/style>\n\n\u003c!--[if mso]>\n\u003cstyle type=\"text/css\">\n  body, table, td, p, a, span { font-family:Arial, Helvetica, sans-serif !important; }\n  .serif   { font-family:Georgia, 'Times New Roman', serif !important; }\n\u003c/style>\n\u003cxml>\u003co:OfficeDocumentSettings>\u003co:PixelsPerInch>96\u003c/o:PixelsPerInch>\u003c/o:OfficeDocumentSettings>\u003c/xml>\n\u003c![endif]-->\n\u003c/head>\n\n\u003cbody style=\"margin:0; padding:0; width:100%; background-color:#F3EDE3;\">\n\n\u003c!-- ==== MODULE: PREHEADER ==== -->\n\u003cdiv style=\"display:none; font-size:1px; color:#F3EDE3; line-height:1px; max-height:0; max-width:0; opacity:0; overflow:hidden; mso-hide:all;\">\n  \u003c!-- IF:WORDS -->We read every word of what you wrote, and we wanted to say thank you properly.\u003c!-- END:WORDS -->\u003c!-- IF:NOWORDS -->You rated your visit, and we wanted to say thank you properly.\u003c!-- END:NOWORDS -->\n  &#8199;&#847;&#8199;&#847;&#8199;&#847;&#8199;&#847;&#8199;&#847;&#8199;&#847;&#8199;&#847;&#8199;&#847;&#8199;&#847;&#8199;&#847;&#8199;&#847;&#8199;&#847;&#8199;&#847;&#8199;&#847;&#8199;&#847;&#8199;&#847;&#8199;&#847;&#8199;&#847;&#8199;&#847;&#8199;&#847;\n\u003c/div>\n\n\u003ctable role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"width:100%; background-color:#F3EDE3;\">\n  \u003ctr>\n    \u003ctd align=\"center\" style=\"padding:24px 12px 32px 12px;\">\n\n      \u003c!--[if mso]>\u003ctable role=\"presentation\" width=\"600\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\u003ctr>\u003ctd>\u003c![endif]-->\n      \u003cdiv style=\"width:100%; max-width:600px; margin:0 auto;\">\n\n        \u003ctable role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"width:100%; max-width:600px;\">\n\n          \u003c!-- ==== MODULE: HEADER ==== -->\n          \u003ctr>\n            \u003ctd align=\"center\" bgcolor=\"#FDFCFA\" style=\"background-color:#FDFCFA; padding:28px 24px 24px 24px; border-radius:4px 4px 0 0; border:1px solid #E7E3DB; border-bottom:0; text-align:center;\">\n              \u003ca href=\"https://alluradental.com.au\" target=\"_blank\" style=\"text-decoration:none;\">\n                \u003cimg src=\"https://alluradental.com.au/assets/img/logo-horizontal.png\" alt=\"Allura Dental\" class=\"logo\" width=\"264\" height=\"41\" style=\"display:block; width:264px; max-width:264px; height:auto; margin:0 auto; border:0;\" />\n              \u003c/a>\n            \u003c/td>\n          \u003c/tr>\n\n          \u003c!-- ==== MODULE: HERO ==== -->\n          \u003ctr>\n            \u003ctd class=\"px pt-hero\" bgcolor=\"#FDFCFA\" style=\"background-color:#FDFCFA; padding:44px 40px 0 40px; border-left:1px solid #E7E3DB; border-right:1px solid #E7E3DB;\">\n              \u003cp style=\"margin:0 0 10px 0; font-family:'Manrope', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size:12px; line-height:18px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:#6A7F62;\">\n                Thank you\n              \u003c/p>\n              \u003ch1 class=\"h1 serif\" style=\"margin:0 0 20px 0; font-family:'Literata', Georgia, 'Times New Roman', serif; font-size:34px; line-height:42px; font-weight:400; color:#000000;\">\n                Thank you, [FIRST NAME]\n              \u003c/h1>\n            \u003c/td>\n          \u003c/tr>\n\n          \u003c!-- ==== MODULE: BODY COPY ==== -->\n          \u003ctr>\n            \u003ctd class=\"px\" bgcolor=\"#FDFCFA\" style=\"background-color:#FDFCFA; padding:0 40px 20px 40px; border-left:1px solid #E7E3DB; border-right:1px solid #E7E3DB;\">\n              \u003c!-- IF:WORDS -->\n              \u003cp style=\"margin:0; font-family:'Manrope', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size:17px; line-height:28px; color:#000000;\">\n                You took the time to tell us how your visit went, and we have read every word.\n              \u003c/p>\n              \u003c!-- END:WORDS -->\n              \u003c!-- IF:NOWORDS -->\n              \u003cp style=\"margin:0; font-family:'Manrope', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size:17px; line-height:28px; color:#000000;\">\n                You took a moment to tell us how your visit went.\n              \u003c/p>\n              \u003c!-- END:NOWORDS -->\n            \u003c/td>\n          \u003c/tr>\n\n          \u003c!-- ==== MODULE: THEIR WORDS \u2014 paste the comment verbatim ==== -->\n          \u003ctr>\n            \u003ctd class=\"px\" bgcolor=\"#FDFCFA\" style=\"background-color:#FDFCFA; padding:0 40px 20px 40px; border-left:1px solid #E7E3DB; border-right:1px solid #E7E3DB;\">\n              \u003ctable role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"width:100%; background-color:#FBF9F4; border:1px solid #E7E3DB; border-radius:4px;\">\n                \u003ctr>\n                  \u003ctd style=\"padding:24px 22px 22px 22px;\">\n                    \u003c!-- IF:STARS -->\n                    \u003cp style=\"margin:0 0 14px 0; font-family:Georgia, 'Times New Roman', serif; font-size:19px; line-height:22px; letter-spacing:0.16em; color:#8F7038;\">\n                      [STARS]\n                    \u003c/p>\n                    \u003c!-- END:STARS -->\n                    \u003c!-- IF:WORDS -->\n                    \u003cp style=\"margin:0 0 6px 0; font-family:'Literata', Georgia, 'Times New Roman', serif; font-size:34px; line-height:24px; color:#6A7F62;\" class=\"serif\">\n                      &ldquo;\n                    \u003c/p>\n                    \u003cp style=\"margin:0; font-family:'Literata', Georgia, 'Times New Roman', serif; font-size:17px; line-height:29px; font-style:italic; color:#1C1C1C;\" class=\"serif\">\n                      [THEIR OWN WORDS]\n                    \u003c/p>\n                    \u003c!-- END:WORDS -->\n                  \u003c/td>\n                \u003c/tr>\n              \u003c/table>\n            \u003c/td>\n          \u003c/tr>\n\n          \u003c!-- ==== MODULE: WHAT IT DID ==== -->\n          \u003ctr>\n            \u003ctd class=\"px\" bgcolor=\"#FDFCFA\" style=\"background-color:#FDFCFA; padding:0 40px 4px 40px; border-left:1px solid #E7E3DB; border-right:1px solid #E7E3DB;\">\n              \u003cp style=\"margin:0 0 14px 0; font-family:'Manrope', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size:17px; line-height:28px; color:#000000;\">\n                [PRACTITIONER FIRST NAME] and the team have seen it. It made their week.\n              \u003c/p>\n\n              \u003cp style=\"margin:26px 0 10px 0; font-family:'Literata', Georgia, 'Times New Roman', serif; font-size:22px; line-height:31px; font-weight:400; color:#000000;\" class=\"serif\">\n                Would you say it on Google too?\n              \u003c/p>\n              \u003c!-- IF:WORDS -->\n              \u003cp style=\"margin:0 0 14px 0; font-family:'Manrope', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size:17px; line-height:28px; color:#000000;\">\n                If you would be happy to say something similar publicly, it would mean a lot to us. Copy what you wrote above, or say it your own way.\n              \u003c/p>\n              \u003c!-- END:WORDS -->\n              \u003c!-- IF:NOWORDS -->\n              \u003cp style=\"margin:0 0 14px 0; font-family:'Manrope', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size:17px; line-height:28px; color:#000000;\">\n                If you would be happy to say the same publicly, it would mean a lot to us. A sentence about your visit is plenty.\n              \u003c/p>\n              \u003c!-- END:NOWORDS -->\n\n              \u003c!-- IF:WORDS -->\n              \u003c!-- ==== MODULE: THREE STEPS \u2014 copy first, then Google ==== -->\n              \u003cp style=\"margin:24px 0 12px 0; font-family:'Manrope', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size:12px; line-height:18px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#000000;\">\n                Three steps, about a minute\n              \u003c/p>\n              \u003ctable role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"width:100%;\">\n                      \u003ctr>\n                        \u003ctd valign=\"top\" width=\"26\" style=\"width:26px; font-family:'Manrope', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size:16px; line-height:26px; font-weight:700; color:#6A7F62;\">1.\u003c/td>\n                        \u003ctd style=\"font-family:'Manrope', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size:16px; line-height:26px; color:#000000; padding-bottom:9px;\">\n                          \u003cstrong style=\"font-weight:700;\">Copy your words above.\u003c/strong> On a phone, press and hold the text, then tap Copy. On a computer, select it and copy.\n                        \u003c/td>\n                      \u003c/tr>\n                      \u003ctr>\n                        \u003ctd valign=\"top\" width=\"26\" style=\"width:26px; font-family:'Manrope', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size:16px; line-height:26px; font-weight:700; color:#6A7F62;\">2.\u003c/td>\n                        \u003ctd style=\"font-family:'Manrope', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size:16px; line-height:26px; color:#000000; padding-bottom:9px;\">\n                          \u003cstrong style=\"font-weight:700;\">Open Google\u003c/strong> with the button below.\n                        \u003c/td>\n                      \u003c/tr>\n                      \u003ctr>\n                        \u003ctd valign=\"top\" width=\"26\" style=\"width:26px; font-family:'Manrope', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size:16px; line-height:26px; font-weight:700; color:#6A7F62;\">3.\u003c/td>\n                        \u003ctd style=\"font-family:'Manrope', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size:16px; line-height:26px; color:#000000;\">\n                          \u003cstrong style=\"font-weight:700;\">Paste your comment, choose your stars, and post.\u003c/strong>\u003cspan style=\"white-space:nowrap; color:#8F7038; letter-spacing:0.12em;\">&nbsp; &#9733;&#9733;&#9733;&#9733;&#9733;\u003c/span>\n                        \u003c/td>\n                      \u003c/tr>\n              \u003c/table>\n              \u003c!-- END:WORDS -->\n              \u003c!-- IF:NOWORDS -->\n              \u003cp style=\"margin:24px 0 12px 0; font-family:'Manrope', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size:12px; line-height:18px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#000000;\">\n                Two steps, about a minute\n              \u003c/p>\n              \u003ctable role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"width:100%;\">\n                      \u003ctr>\n                        \u003ctd valign=\"top\" width=\"26\" style=\"width:26px; font-family:'Manrope', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size:16px; line-height:26px; font-weight:700; color:#6A7F62;\">1.\u003c/td>\n                        \u003ctd style=\"font-family:'Manrope', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size:16px; line-height:26px; color:#000000; padding-bottom:9px;\">\n                          \u003cstrong style=\"font-weight:700;\">Open Google\u003c/strong> with the button below.\n                        \u003c/td>\n                      \u003c/tr>\n                      \u003ctr>\n                        \u003ctd valign=\"top\" width=\"26\" style=\"width:26px; font-family:'Manrope', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size:16px; line-height:26px; font-weight:700; color:#6A7F62;\">2.\u003c/td>\n                        \u003ctd style=\"font-family:'Manrope', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size:16px; line-height:26px; color:#000000;\">\n                          \u003cstrong style=\"font-weight:700;\">Choose your stars, add a line about your visit, and post.\u003c/strong>\u003cspan style=\"white-space:nowrap; color:#8F7038; letter-spacing:0.12em;\">&nbsp; &#9733;&#9733;&#9733;&#9733;&#9733;\u003c/span>\n                        \u003c/td>\n                      \u003c/tr>\n              \u003c/table>\n              \u003c!-- END:NOWORDS -->\n            \u003c/td>\n          \u003c/tr>\n\n          \u003c!-- ==== MODULE: PRIMARY CTA \u2014 one gold element per email ==== -->\n          \u003ctr>\n            \u003ctd class=\"px\" bgcolor=\"#FDFCFA\" style=\"background-color:#FDFCFA; padding:8px 40px 22px 40px; border-left:1px solid #E7E3DB; border-right:1px solid #E7E3DB;\">\n              \u003ctable role=\"presentation\" class=\"btn-wrap\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"width:auto;\">\n                \u003ctr>\n                  \u003ctd align=\"center\" bgcolor=\"#B8965A\" style=\"background-color:#B8965A; border-radius:4px;\">\n                    \u003ca class=\"btn-a\" href=\"https://g.page/r/CcjSxabvOoJYEBM/review\" target=\"_blank\" style=\"display:inline-block; padding:17px 34px; font-family:'Manrope', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size:14px; line-height:20px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#FDFCFA; text-decoration:none; border-radius:4px;\">\n                      Write a Google review\n                    \u003c/a>\n                  \u003c/td>\n                \u003c/tr>\n              \u003c/table>\n              \u003c!-- IF:WORDS -->\n              \u003cp style=\"margin:12px 0 0 0; font-family:'Manrope', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size:14px; line-height:22px; color:#6B6B63;\">\n                Opens straight at our page &nbsp;&middot;&nbsp; Your words, pasted, are completely fine\n              \u003c/p>\n              \u003c!-- END:WORDS -->\n              \u003c!-- IF:NOWORDS -->\n              \u003cp style=\"margin:12px 0 0 0; font-family:'Manrope', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size:14px; line-height:22px; color:#6B6B63;\">\n                Opens straight at our page &nbsp;&middot;&nbsp; A sentence or two is plenty\n              \u003c/p>\n              \u003c!-- END:NOWORDS -->\n            \u003c/td>\n          \u003c/tr>\n\n          \u003c!-- ==== MODULE: INFO CARD \u2014 the honest reason, said once ==== -->\n          \u003ctr>\n            \u003ctd class=\"px\" bgcolor=\"#FDFCFA\" style=\"background-color:#FDFCFA; padding:0 40px 28px 40px; border-left:1px solid #E7E3DB; border-right:1px solid #E7E3DB;\">\n              \u003ctable role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"width:100%; background-color:#FBF9F4; border:1px solid #E7E3DB; border-radius:4px;\">\n                \u003ctr>\n                  \u003ctd style=\"padding:22px;\">\n                    \u003cp style=\"margin:0 0 14px 0; font-family:'Manrope', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size:12px; line-height:18px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#000000;\">\n                      What it would mean to us\n                    \u003c/p>\n\n                    \u003ctable role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n                      \u003ctr>\n                        \u003ctd valign=\"top\" width=\"22\" style=\"width:22px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:26px; color:#6A7F62;\">&bull;\u003c/td>\n                        \u003ctd style=\"font-family:'Manrope', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size:16px; line-height:26px; color:#000000; padding-bottom:11px;\">\n                          \u003cstrong style=\"font-weight:700;\">We would be thrilled.\u003c/strong> Nothing lifts this team like seeing a patient&rsquo;s own words out in the open.\n                        \u003c/td>\n                      \u003c/tr>\n                      \u003ctr>\n                        \u003ctd valign=\"top\" width=\"22\" style=\"width:22px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:26px; color:#6A7F62;\">&bull;\u003c/td>\n                        \u003ctd style=\"font-family:'Manrope', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size:16px; line-height:26px; color:#000000; padding-bottom:11px;\">\n                          \u003cstrong style=\"font-weight:700;\">It helps someone else decide.\u003c/strong> A family choosing a dentist reads what patients say before they trust anyone with their children. That is a real kindness, and it takes a minute.\n                        \u003c/td>\n                      \u003c/tr>\n                      \u003c!-- IF:WORDS -->\n                      \u003ctr>\n                        \u003ctd valign=\"top\" width=\"22\" style=\"width:22px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:26px; color:#6A7F62;\">&bull;\u003c/td>\n                        \u003ctd style=\"font-family:'Manrope', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size:16px; line-height:26px; color:#000000;\">\n                          \u003cstrong style=\"font-weight:700;\">And it is a promise back to you.\u003c/strong> The visit you described is the standard we hold ourselves to &mdash; for you and your family, every time you walk in.\n                        \u003c/td>\n                      \u003c/tr>\n                      \u003c!-- END:WORDS -->\n                      \u003c!-- IF:NOWORDS -->\n                      \u003ctr>\n                        \u003ctd valign=\"top\" width=\"22\" style=\"width:22px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:26px; color:#6A7F62;\">&bull;\u003c/td>\n                        \u003ctd style=\"font-family:'Manrope', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size:16px; line-height:26px; color:#000000;\">\n                          \u003cstrong style=\"font-weight:700;\">And it is a promise back to you.\u003c/strong> The visit you rated is the standard we hold ourselves to &mdash; for you and your family, every time you walk in.\n                        \u003c/td>\n                      \u003c/tr>\n                      \u003c!-- END:NOWORDS -->\n                    \u003c/table>\n                  \u003c/td>\n                \u003c/tr>\n              \u003c/table>\n            \u003c/td>\n          \u003c/tr>\n\n          \u003c!-- ==== MODULE: DIVIDER ==== -->\n          \u003ctr>\n            \u003ctd class=\"px\" bgcolor=\"#FDFCFA\" style=\"background-color:#FDFCFA; padding:0 40px; border-left:1px solid #E7E3DB; border-right:1px solid #E7E3DB;\">\n              \u003ctable role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n                \u003ctr>\u003ctd height=\"1\" style=\"height:1px; font-size:0; line-height:0; background-color:#E7E3DB;\">&nbsp;\u003c/td>\u003c/tr>\n              \u003c/table>\n            \u003c/td>\n          \u003c/tr>\n\n          \u003c!-- ==== MODULE: SIGN-OFF ==== -->\n          \u003ctr>\n            \u003ctd class=\"px\" bgcolor=\"#FDFCFA\" style=\"background-color:#FDFCFA; padding:24px 40px 32px 40px; border-left:1px solid #E7E3DB; border-right:1px solid #E7E3DB;\">\n              \u003cp style=\"margin:0 0 18px 0; font-family:'Manrope', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size:16px; line-height:26px; color:#000000;\">\n                And if you would rather leave it at what you have already told us, that is more than enough.\n              \u003c/p>\n              \u003cp style=\"margin:0 0 18px 0; font-family:'Manrope', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size:16px; line-height:26px; color:#000000;\">\n                Anything at all, just reply to this email or call us on\n                \u003ca href=\"tel:+61383428888\" style=\"color:#8F7038; text-decoration:underline; white-space:nowrap;\">03 8342 8888\u003c/a>.\n              \u003c/p>\n              \u003cp style=\"margin:0; font-family:'Literata', Georgia, 'Times New Roman', serif; font-size:17px; line-height:28px; color:#000000;\" class=\"serif\">\n                With thanks, truly,\u003cbr />\n                \u003cspan style=\"font-family:'Manrope', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size:16px; color:#6B6B63;\">The team at Allura Dental\u003c/span>\n              \u003c/p>\n            \u003c/td>\n          \u003c/tr>\n\n          \u003c!-- ==== MODULE: FOOTER ==== -->\n          \u003ctr>\n            \u003ctd class=\"px\" align=\"center\" bgcolor=\"#E6E8E3\" style=\"background-color:#E6E8E3; padding:26px 40px 28px 40px; border:1px solid #E7E3DB; border-radius:0 0 4px 4px; text-align:center;\">\n              \u003cimg src=\"https://alluradental.com.au/assets/img/icon-mark.png\" alt=\"\" width=\"30\" height=\"30\" style=\"display:block; width:30px; height:30px; margin:0 auto 12px auto; border:0;\" />\n              \u003cp style=\"margin:0 0 10px 0; font-family:'Literata', Georgia, 'Times New Roman', serif; font-size:15px; line-height:24px; color:#1C1C1C;\" class=\"serif\">\n                Modern dentistry, done differently.\n              \u003c/p>\n              \u003cp style=\"margin:0 0 6px 0; font-family:'Manrope', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size:14px; line-height:23px; color:#4A4A48;\">\n                22 Bradshaw Street, Truganina VIC 3029\n              \u003c/p>\n              \u003cp style=\"margin:0 0 14px 0; font-family:'Manrope', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size:15px; line-height:24px; font-weight:700;\">\n                \u003ca href=\"https://maps.app.goo.gl/xnfp5SkiPDLb5LPX7\" target=\"_blank\" style=\"color:#7B5F2F; text-decoration:underline;\">Get directions\u003c/a>\n              \u003c/p>\n              \u003cp style=\"margin:0 0 12px 0; font-family:'Manrope', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size:14px; line-height:23px; color:#4A4A48;\">\n                \u003ca href=\"tel:+61383428888\" style=\"color:#7B5F2F; text-decoration:none;\">03 8342 8888\u003c/a>\n                &nbsp;&middot;&nbsp;\n                \u003ca href=\"mailto:info@alluradental.com.au\" style=\"color:#7B5F2F; text-decoration:none;\">info@alluradental.com.au\u003c/a>\u003cbr />\n                \u003ca href=\"https://alluradental.com.au\" target=\"_blank\" style=\"color:#7B5F2F; text-decoration:none;\">alluradental.com.au\u003c/a>\n              \u003c/p>\n              \u003cp style=\"margin:0 0 10px 0; font-family:'Manrope', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size:13px; line-height:21px; color:#5A5A55;\">\n                Mon&ndash;Fri 9am&ndash;6pm &nbsp;&middot;&nbsp; Sat 9am&ndash;4pm &nbsp;&middot;&nbsp; Sun closed\n              \u003c/p>\n              \u003cp style=\"margin:0; font-family:'Manrope', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size:13px; line-height:21px; color:#5A5A55;\">\n                You are receiving this because you sent us feedback after your visit.\n              \u003c/p>\n            \u003c/td>\n          \u003c/tr>\n\n        \u003c/table>\n\n      \u003c/div>\n      \u003c!--[if mso]>\u003c/td>\u003c/tr>\u003c/table>\u003c![endif]-->\n\n    \u003c/td>\n  \u003c/tr>\n\u003c/table>\n\n\u003c/body>\n\u003c/html>\n";
+
+var TOKENS = {
+  name: '[FIRST NAME]',
+  words: '[THEIR OWN WORDS]',
+  pract: '[PRACTITIONER FIRST NAME]',
+  stars: '[STARS]'
+};
+
+var STAR = '\u2605';
+
+var $ = function(id){ return document.getElementById(id); };
+var elName = $('firstName'), elSel = $('practitioner'), elOther = $('practitionerOther'),
+    elOtherWrap = $('otherWrap'), elComment = $('comment'), elEcho = $('practEcho'),
+    elStars = $('stars'),
+    elStatus = $('status'), elFrame = $('preview'), elBox = $('previewBox'),
+    elStage = $('clipStage');
+
+/* ---------- substitution ---------- */
+
+function escapeHtml(s){
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+function toParagraphHtml(s){
+  return escapeHtml(s).replace(/\r\n|\r|\n/g, '<br />');
+}
+function replaceAll(hay, needle, repl){
+  return hay.split(needle).join(repl);
+}
+
+/* Remove the hidden preheader div — the first element inside <body>.
+   It is there for automated sends; pasted into a mail client it shows up
+   as a stray line of text. Depth-counted so it cannot eat the wrong tag. */
+function stripPreheader(html){
+  var bodyOpen = html.match(/<body[^>]*>/i);
+  if(!bodyOpen) return html;
+  var after = html.indexOf(bodyOpen[0]) + bodyOpen[0].length;
+  var divIdx = html.indexOf('<div', after);
+  if(divIdx < 0) return html;
+  var openEnd = html.indexOf('>', divIdx);
+  if(openEnd < 0) return html;
+  if(!/display\s*:\s*none/i.test(html.slice(divIdx, openEnd + 1))) return html;
+
+  var re = /<\/?div\b/gi, depth = 1, m, end = -1;
+  re.lastIndex = openEnd + 1;
+  while((m = re.exec(html))){
+    if(m[0].charAt(1) === '/'){
+      depth--;
+      if(depth === 0){ end = html.indexOf('>', m.index) + 1; break; }
+    } else { depth++; }
+  }
+  if(end < 1) return html;
+
+  var start = divIdx;
+  var lead = html.slice(0, divIdx).match(/<!--[^>]*PREHEADER[^>]*-->\s*$/i);
+  if(lead) start = divIdx - lead[0].length;
+
+  return html.slice(0, start) + html.slice(end).replace(/^[ \t]*\r?\n/, '');
+}
+
+function values(){
+  var pract = elSel.value === '__other__' ? elOther.value.trim() : elSel.value;
+  var n = parseInt(elStars.value, 10);
+  return {
+    name: elName.value.trim(),
+    pract: pract,
+    words: elComment.value.replace(/\s+$/,''),
+    stars: (n >= 1 && n <= 5) ? n : 0
+  };
+}
+
+/* The email documents its own placeholders in an HTML comment at the top, so
+   the tokens appear twice. Substitute — and later scan for leftovers — only
+   outside comments, and the documentation stays intact. */
+function mapOutsideComments(html, fn){
+  var parts = html.split(/(<!--[\s\S]*?-->)/g);
+  for(var i = 0; i < parts.length; i += 2){ parts[i] = fn(parts[i]); }
+  return parts.join('');
+}
+function outsideComments(html){
+  var parts = html.split(/(<!--[\s\S]*?-->)/g), keep = [];
+  for(var i = 0; i < parts.length; i += 2){ keep.push(parts[i]); }
+  return keep.join('');
+}
+
+/* The email carries both halves of every passage that assumes a written
+   comment, marked IF:WORDS / IF:NOWORDS, plus an optional IF:STARS row.
+   Drop the blocks that do not apply — markers and all, so nothing is left
+   behind as an empty paragraph. */
+function resolveBlock(html, name, keep){
+  if(keep) return html;
+  var re = new RegExp('[ \\t]*<!-- IF:' + name + ' -->[\\s\\S]*?<!-- END:' + name + ' -->\\n?', 'g');
+  return html.replace(re, '');
+}
+
+/* The markers of the blocks we kept are machinery, not documentation — they
+   should not ride along into someone's inbox. */
+function stripMarkers(html){
+  return html.replace(/[ \t]*<!-- (?:IF|END):[A-Z]+ -->\n?/g, '');
+}
+
+function build(v){
+  var hasWords = v.words.trim() !== '';
+  var html = resolveBlock(EMAIL_TEMPLATE, 'STARS', v.stars > 0);
+  html = resolveBlock(html, 'WORDS', hasWords);
+  html = resolveBlock(html, 'NOWORDS', !hasWords);
+  html = mapOutsideComments(html, function(chunk){
+    chunk = replaceAll(chunk, TOKENS.name,  escapeHtml(v.name));
+    chunk = replaceAll(chunk, TOKENS.pract, escapeHtml(v.pract));
+    chunk = replaceAll(chunk, TOKENS.words, toParagraphHtml(v.words));
+    chunk = replaceAll(chunk, TOKENS.stars, new Array(v.stars + 1).join(STAR));
+    return chunk;
+  });
+  return stripMarkers(stripPreheader(html));
+}
+
+/* ---------- plain text, derived from the built email ---------- */
+
+var BLOCK = /^(P|DIV|H1|H2|H3|H4|H5|H6|TR|TABLE|LI|UL|OL|BLOCKQUOTE)$/;
+
+function textWalk(node, out){
+  var kids = node.childNodes;
+  for(var i = 0; i < kids.length; i++){
+    var n = kids[i];
+    if(n.nodeType === 3){
+      out.push(n.nodeValue.replace(/[\s ]+/g, ' '));
+      continue;
+    }
+    if(n.nodeType !== 1) continue;
+    var tag = n.tagName;
+    if(tag === 'STYLE' || tag === 'SCRIPT' || tag === 'IMG') continue;
+    if(tag === 'BR'){ out.push('\n'); continue; }
+    var style = n.getAttribute('style') || '';
+    if(/display\s*:\s*none/i.test(style)) continue;
+
+    var block = BLOCK.test(tag);
+    if(block) out.push('\n');
+    if(tag === 'A'){
+      var label = n.textContent.replace(/[\s ]+/g,' ').trim();
+      if(!label) continue;               /* logo link — no text, no URL */
+      textWalk(n, out);
+      var href = n.getAttribute('href') || '';
+      if(/^https?:/i.test(href) && href.indexOf(label) < 0) out.push(' ' + href);
+    } else {
+      textWalk(n, out);
+    }
+    if(block) out.push('\n');
+  }
+}
+
+function toPlainText(html){
+  var doc = new DOMParser().parseFromString(html, 'text/html');
+  var out = [];
+  textWalk(doc.body, out);
+  return out.join('')
+    .replace(/[ \t ]+/g, ' ')
+    .replace(/ *\n */g, '\n')
+    .replace(/\n{3,}/g, '\n\n')
+    .replace(/\n(“|")\n+/g, '\n$1')   /* keep the open quote on its words */
+    .trim() + '\n';
+}
+
+/* ---------- validation ---------- */
+
+var LEFTOVER = /\[[A-Z][A-Z0-9 '\/-]*\]/;
+
+function problem(){
+  var v = values();
+  if(!v.name)  return { msg:'Add the patient’s first name before copying.', el:elName };
+  if(!v.pract) return { msg:'Name the practitioner before copying.', el: elSel.value === '__other__' ? elOther : elSel };
+  if(!v.words.trim() && !v.stars){
+    return { msg:'Nothing of theirs to show. Paste their comment, or set the rating they gave.', el:elComment };
+  }
+  var m = outsideComments(build(v)).match(LEFTOVER);
+  if(m) return { msg:'Refusing to copy: ' + m[0] + ' is still in the email.', el:null };
+  return null;
+}
+
+function fail(p){
+  elStatus.className = 'err';
+  elStatus.textContent = p.msg;
+  [elName, elOther, elComment].forEach(function(e){ e.classList.remove('invalid'); });
+  if(p.el){
+    if(p.el.classList) p.el.classList.add('invalid');
+    p.el.focus();
+  }
+}
+function done(msg){
+  elStatus.className = 'ok';
+  elStatus.textContent = msg;
+}
+
+/* ---------- clipboard ---------- */
+
+/* Fallback for browsers without navigator.clipboard.write: a hidden
+   contenteditable holding real HTML, selected and copied. */
+function legacyCopyHtml(html, text){
+  elStage.innerHTML = '';
+  var host = document.createElement('div');
+  host.setAttribute('contenteditable', 'true');
+  host.innerHTML = html;
+  elStage.appendChild(host);
+
+  var range = document.createRange();
+  range.selectNodeContents(host);
+  var sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+
+  var onCopy = function(e){
+    if(!e.clipboardData) return;
+    e.clipboardData.setData('text/html', html);
+    e.clipboardData.setData('text/plain', text);
+    e.preventDefault();
+  };
+  document.addEventListener('copy', onCopy, true);
+  var ok = false;
+  try { ok = document.execCommand('copy'); } catch(err){ ok = false; }
+  document.removeEventListener('copy', onCopy, true);
+
+  sel.removeAllRanges();
+  elStage.innerHTML = '';
+  return ok;
+}
+
+function legacyCopyText(text){
+  var ta = document.createElement('textarea');
+  ta.value = text;
+  ta.setAttribute('readonly', 'readonly');
+  elStage.appendChild(ta);
+  ta.select();
+  ta.setSelectionRange(0, text.length);
+  var ok = false;
+  try { ok = document.execCommand('copy'); } catch(err){ ok = false; }
+  elStage.removeChild(ta);
+  return ok;
+}
+
+$('copyRich').addEventListener('click', function(){
+  var p = problem();
+  if(p) return fail(p);
+
+  var html = build(values());
+  var text = toPlainText(html);
+
+  /* iOS Safari: the ClipboardItem must be constructed synchronously inside
+     the handler — anything awaited first and the write silently no-ops. */
+  var wrote = false;
+  if(window.ClipboardItem && navigator.clipboard && navigator.clipboard.write){
+    try{
+      var item = new ClipboardItem({
+        'text/html':  new Blob([html], {type:'text/html'}),
+        'text/plain': new Blob([text], {type:'text/plain'})
+      });
+      wrote = true;
+      navigator.clipboard.write([item]).then(function(){
+        done('Email copied. Paste into a new message — formatting comes with it.');
+      }, function(){
+        if(legacyCopyHtml(html, text)){
+          done('Email copied. Paste into a new message — formatting comes with it.');
+        } else {
+          fail({ msg:'Could not reach the clipboard. Use Download .html instead.', el:null });
+        }
+      });
+    } catch(err){ wrote = false; }
+  }
+  if(!wrote){
+    if(legacyCopyHtml(html, text)){
+      done('Email copied. Paste into a new message — formatting comes with it.');
+    } else {
+      fail({ msg:'Could not reach the clipboard. Use Download .html instead.', el:null });
+    }
+  }
+});
+
+$('copyPlain').addEventListener('click', function(){
+  var p = problem();
+  if(p) return fail(p);
+  var text = toPlainText(build(values()));
+
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(text).then(function(){
+      done('Plain text copied.');
+    }, function(){
+      if(legacyCopyText(text)) done('Plain text copied.');
+      else fail({ msg:'Could not reach the clipboard. Use Download .html instead.', el:null });
+    });
+  } else if(legacyCopyText(text)){
+    done('Plain text copied.');
+  } else {
+    fail({ msg:'Could not reach the clipboard. Use Download .html instead.', el:null });
+  }
+});
+
+$('download').addEventListener('click', function(){
+  var p = problem();
+  if(p) return fail(p);
+  var v = values();
+  var html = build(v);
+  var slug = v.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'patient';
+  var blob = new Blob([html], {type:'text/html;charset=utf-8'});
+  var url = URL.createObjectURL(blob);
+  var a = document.createElement('a');
+  a.href = url;
+  a.download = 'review-thank-you-' + slug + '.html';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  setTimeout(function(){ URL.revokeObjectURL(url); }, 4000);
+  done('Downloaded. In Outlook for Windows: Insert › Attach File › Insert as Text.');
+});
+
+/* ---------- live preview ---------- */
+
+var frameTimer = null;
+function refresh(){
+  var v = values();
+  elEcho.textContent = v.pract || TOKENS.pract;
+  if(v.words.trim()){
+    $('modeNote').textContent = '';
+  } else if(v.stars){
+    $('modeNote').textContent = 'No comment: sending the rating-only version — the quote block holds the stars alone and the steps drop to two.';
+  } else {
+    $('modeNote').textContent = 'Leave this blank only if you set a rating above.';
+  }
+  elStatus.className = '';
+  elStatus.textContent = '';
+  clearTimeout(frameTimer);
+  frameTimer = setTimeout(function(){
+    if(!elBox.open) return;
+    elFrame.srcdoc = build(v);
+  }, 120);
+}
+
+[elName, elOther, elComment].forEach(function(e){
+  e.addEventListener('input', function(){ e.classList.remove('invalid'); refresh(); });
+});
+elStars.addEventListener('change', refresh);
+elSel.addEventListener('change', function(){
+  var other = elSel.value === '__other__';
+  elOtherWrap.hidden = !other;
+  if(other) elOther.focus();
+  try { localStorage.setItem('allura.tpl17.practitioner', elSel.value); } catch(err){}
+  refresh();
+});
+elBox.addEventListener('toggle', function(){ if(elBox.open) refresh(); });
+
+/* Only the dropdown choice is remembered. Never a name, never a comment. */
+try{
+  var saved = localStorage.getItem('allura.tpl17.practitioner');
+  if(saved){
+    for(var i = 0; i < elSel.options.length; i++){
+      if(elSel.options[i].value === saved){
+        elSel.value = saved;
+        elOtherWrap.hidden = saved !== '__other__';
+        break;
+      }
+    }
+  }
+}catch(err){}
+
+if(window.innerWidth >= 900) elBox.open = true;
+refresh();
+
+})();
+</script>
+</body>
+</html>
